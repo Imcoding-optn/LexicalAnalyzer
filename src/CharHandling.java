@@ -76,7 +76,7 @@ public class CharHandling {
 				//从匹配成功位置到结束 截取字符串  继续分割匹配
 				this.greedyMatch(spFailed);
 				
-				//这个return 加的很有学问！！！。。......................................调试调出来的
+				//上面的匹配好了就立刻结束，免得跑到外面的循环去了
 				return;//这里结束和for外面结束是不一样的。。。。。
 			}
 		}//end for
